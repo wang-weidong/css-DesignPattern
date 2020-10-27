@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="11Singleton"/>
+	<classpathentry kind="src" path="12SimpleFactory"/>
+	<classpathentry kind="src" path="13FactoryMethod"/>
+	<classpathentry kind="src" path="14AbstractFactory"/>
+	<classpathentry kind="src" path="15prototype"/>
+	<classpathentry kind="src" path="16Builder"/>
+	<classpathentry kind="src" path="21proxy"/>
+	<classpathentry kind="src" path="22adapter"/>
+	<classpathentry kind="src" path="23decorator"/>
+	<classpathentry kind="src" path="24composite"/>
+	<classpathentry kind="src" path="25flyweight"/>
+	<classpathentry kind="src" path="26facade"/>
+	<classpathentry kind="src" path="27bridge"/>
+	<classpathentry kind="src" path="31Template"/>
+	<classpathentry kind="src" path="32strategy"/>
+	<classpathentry kind="src" path="33state"/>
+	<classpathentry kind="src" path="34command"/>
+	<classpathentry kind="src" path="35observer"/>
+	<classpathentry kind="src" path="36chain"/>
+	<classpathentry kind="src" path="37interpreter"/>
+	<classpathentry kind="src" path="38memento"/>
+	<classpathentry kind="src" path="39mediator"/>
+	<classpathentry kind="src" path="310visitor"/>
+	<classpathentry kind="src" path="311iterator"/>
+	<classpathentry kind="src" path="other"/>
+	<classpathentry kind="lib" path="lib/guava-21.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
