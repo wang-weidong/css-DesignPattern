@@ -15,15 +15,15 @@ public abstract class AbstractClass {
 		operation3();
 	}
 
-	// 基本方法—具体方法
+	// 具体方法
 	private void operation1() {
 		System.out.println("operation1");
 	}
 
-	// 基本方法—抽象方法
+	// 抽象方法
 	public abstract void operation2();
 
-	// 基本方法—钩子方法
+	// 钩子方法
 	protected void operation3() {
 	}
 }

@@ -15,7 +15,7 @@ public class Test {
 		Filter f2 = new SensitiveFilter();
 		f1.setNext(f2);
 
-		msg = f2.doFilter(msg);
+		msg = f1.doFilter(msg);
 
 		System.out.println(msg);
 	}

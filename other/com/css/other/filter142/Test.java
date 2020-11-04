@@ -15,9 +15,8 @@ public class Test {
 		Invoker invoker = new Invoker();
 		// 创建命令
 		Filter f1 = new ConcreteFilter();
-
 		// 添加命令，执行命令
-		invoker.setCommand(f1);
+		invoker.setFilter(f1);
 		msg = invoker.execute(msg);
 
 		System.out.println(msg);

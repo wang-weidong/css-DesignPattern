@@ -8,5 +8,15 @@ package com.css.other.filter10;
  * @author CSS. WangWeidong
  */
 public abstract class AbstractHandler {
+	/**
+	 * 关联对象
+	 */
+	protected Filter filter;
+
+
+	public AbstractHandler(Filter filter) {
+		this.filter = filter;
+	}
+
 	public abstract String handle(String str);
 }

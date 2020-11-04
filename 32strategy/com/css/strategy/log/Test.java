@@ -11,8 +11,8 @@ public class Test {
 	public static void main(String[] args) {
 		LogContext log = new LogContext();
 		log.log("记日志");
-		log.log("记录超长日志");
+		log.log("这是一个长记录日志1");
 		log.log("记录日志");
-		log.log("再次记录日志");
+		log.log("这是一个长记录日志2");
 	}
 }

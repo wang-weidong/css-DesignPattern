@@ -12,8 +12,10 @@ import java.util.Arrays;
 public class Test {
 	public static void main(String args[]) {
 		int arr[] = { 1, 4, 6, 2, 5, 3, 7, 10, 9 };
+		
+		Sort sort=new BubbleSort();
 
-		ArrayHandler ah = new ArrayHandler(new BubbleSort());// 设置具体策略
+		ArrayHandler ah = new ArrayHandler(sort);// 设置具体策略
 
 		int result[] = ah.sort(arr);
 

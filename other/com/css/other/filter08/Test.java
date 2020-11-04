@@ -11,10 +11,8 @@ public class Test {
 	public static void main(String[] args) {
 		String msg = "大家好，<script>这些是敏感词1、敏感词2、<敏感词3>、王伟东</script>";
 
-		FilterFactory factory = FilterFactory.getFactory();
-
-		Filter f1 = factory.getFilter("html");
-		Filter f2 = factory.getFilter("sensitive");
+		Filter f1 = FilterFactory.getFilter("html");
+		Filter f2 = FilterFactory.getFilter("sensitive");
 
 		msg = f1.doFilter(msg);
 		msg = f2.doFilter(msg);

@@ -8,8 +8,8 @@ package com.css.other.filter09;
  * @author CSS. WangWeidong
  */
 public class FilterUtils {
-	private HTMLFilter f1 = new HTMLFilter();
-	private SensitiveFilter f2 = new SensitiveFilter();
+	private static HTMLFilter f1 = new HTMLFilter();
+	private static SensitiveFilter f2 = new SensitiveFilter();
 
 	public String htmlFilter(String str) {
 		return f1.doFilter(str);

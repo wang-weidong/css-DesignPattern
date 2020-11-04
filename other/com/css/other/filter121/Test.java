@@ -1,4 +1,4 @@
-package com.css.other.filter11;
+package com.css.other.filter121;
 
 /**
  * 测试
@@ -11,10 +11,9 @@ public class Test {
 	public static void main(String[] args) {
 		String msg = "大家好，<script>这些是敏感词1、敏感词2、<敏感词3>、王伟东</script>";
 
-		AbstractHandler handler = new ConcreteHandler1();
+		Context handler = new Context(new ConcreteFilter());
 		msg = handler.handle(msg);
 
 		System.out.println(msg);
 	}
-
 }

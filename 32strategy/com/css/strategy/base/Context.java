@@ -18,6 +18,8 @@ public class Context {
 
 	// 封装后的策略方法
 	public void algorithm() {
+		System.out.println("begin");
 		this.strategy.algorithm();
+		System.out.println("end");
 	}
 }

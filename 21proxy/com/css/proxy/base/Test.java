@@ -12,15 +12,9 @@ public class Test {
 	public static void main(String[] args) {
 		// 创建具体类
 		Subject realSubject = new RealSubject();
-		// 自己执行
-		realSubject.request();
-
-		System.out.println("----------------------");
-
 		// 创建代理类
 		Subject proxy = new Proxy(realSubject);
 		// 代理执行
 		proxy.request();
-
 	}
 }

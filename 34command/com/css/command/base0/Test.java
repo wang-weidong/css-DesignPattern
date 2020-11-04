@@ -14,8 +14,8 @@ public class Test {
 		Invoker invoker = new Invoker();
 
 		// 创建命令
-		ConcreteCommand1 concreteCommand1 = new ConcreteCommand1();
-		ConcreteCommand2 concreteCommand2 = new ConcreteCommand2();
+		Command concreteCommand1 = new ConcreteCommand1();
+		Command concreteCommand2 = new ConcreteCommand2();
 
 		// 添加命令，执行命令
 		invoker.setCommand(concreteCommand1);

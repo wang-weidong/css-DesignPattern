@@ -15,7 +15,7 @@ public class ConcreteObserver2 extends Observer {
 
 	@Override
 	public void response(String message, String from) {
-		System.out.println("观察者1[" + this.name + "]收到[" + from + "]: " + message);
+		System.out.println("观察者2[" + this.name + "]收到[" + from + "]: " + message);
 		super.notifyObserver(message);
 	}
 }

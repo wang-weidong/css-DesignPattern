@@ -16,7 +16,7 @@ public class Login {
 	}
 
 	boolean login() {
-		System.out.println("用户登录");
+		System.out.println("web用户登录");
 		return authMode.checkAccount();
 	}
 }

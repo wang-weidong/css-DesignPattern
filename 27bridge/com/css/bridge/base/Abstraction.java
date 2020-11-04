@@ -10,7 +10,7 @@ package com.css.bridge.base;
 public abstract class Abstraction {
 
 	/**
-	 * 桥接组合对象
+	 * 桥接关联对象
 	 */
 	protected Implementor implementor;
 

@@ -10,11 +10,14 @@ package com.css.bridge.base;
 public class Test {
 
 	public static void main(String[] args) {
+		// 创建具体实现类
+		Implementor impl = new ConcreteImplementorA();
+		// 创建扩充抽象类，并桥接关联 impl对象
+		Abstraction abstraction = new RefinedAbstraction(impl);
+		// 执行操作，通常由具体实现类完成
+		abstraction.operation();
 
-		Abstraction abstraction1 = new RefinedAbstraction(new ConcreteImplementorA());
 		Abstraction abstraction2 = new RefinedAbstraction(new ConcreteImplementorB());
-
-		abstraction1.operation();
 		abstraction2.operation();
 	}
 }

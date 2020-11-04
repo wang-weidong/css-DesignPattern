@@ -4,7 +4,9 @@ import java.lang.reflect.Constructor;
 import java.util.concurrent.CountDownLatch;
 import java.util.stream.IntStream;
 
-import com.css.singleton5.enumclass.Singleton6;
+import com.css.singleton1.hungry.Singleton1;
+import com.css.singleton2.lazy.Singleton3;
+import com.css.singleton2.lazy.Singleton3Unsafe;
 
 /**
  * 测试
@@ -16,18 +18,18 @@ import com.css.singleton5.enumclass.Singleton6;
 public class Test {
 
 	public static void main(String[] args) throws Exception {
-//		Object singleton = Singleton6.getInstance();
+		Object singleton = Singleton1.getInstance();
 //		serializaTest(singleton);
 //		constructorTest(singleton);
-//		threadTest();
-		for (int i = 0; i < 5; i++)
-			testPerformence(i);
+		threadTest();
+//		for (int i = 0; i < 5; i++)
+//			testPerformence(i);
 	}
 
 	public static void threadTest() {
 		IntStream.rangeClosed(1, 10).forEach(i -> new Thread() {
 			public void run() {
-				Object singleton = Singleton6.getInstance();
+				Object singleton = Singleton3Unsafe.getInstance();
 				System.out.println(Thread.currentThread().getName() + " " + singleton);
 
 			}
@@ -43,7 +45,7 @@ public class Test {
 		IntStream.rangeClosed(1, threadNum).forEach(i -> new Thread() {
 			public void run() {
 				for (int j = 0; j < number; j++) {
-					Singleton6.getInstance();
+					Singleton3.getInstance();
 				}
 				connectedSemaphore.countDown();
 			}

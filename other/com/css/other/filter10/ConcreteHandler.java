@@ -8,10 +8,9 @@ package com.css.other.filter10;
  * @author CSS. WangWeidong
  */
 public class ConcreteHandler extends AbstractHandler {
-	private Filter filter;
 
 	public ConcreteHandler(Filter filter) {
-		this.filter = filter;
+		super(filter);
 	}
 
 	public String handle(String str) {

@@ -12,7 +12,8 @@ public class SetMealA extends MealBuilder {
 	@Override
 	public Meal build() {
 		this.meal.setName("煎饼套餐");
-		return this.meal.addFood(FoodFactory.getFood("煎饼"))
+		return this.meal
+				.addFood(FoodFactory.getFood("煎饼"))
 				.addFood(FoodFactory.getFood("鸡蛋"))
 				.addFood(FoodFactory.getFood("鸡蛋"))
 				.addFood(FoodFactory.getFood("香肠"))

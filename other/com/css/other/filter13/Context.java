@@ -1,7 +1,7 @@
 package com.css.other.filter13;
 
 /**
- * 环境类
+ * 状态环境类
  * 
  * 中国软件与技术服务股份有限公司-设计模式培训（Java版）
  * 

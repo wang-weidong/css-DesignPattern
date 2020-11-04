@@ -11,6 +11,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		Meal meal = new PancakeMeal();
+
 		meal = new EggDecorator(meal);
 		meal = new EggDecorator(meal);
 		meal = new SausageDecorator(meal);

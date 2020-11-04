@@ -6,11 +6,11 @@ package com.css.strategy.base;
 public class Test {
 
 	public static void main(String[] args) {
-		// 声明出一个具体的策略
+		// 创建一个具体的策略对象
 		Strategy strategy = new ConcreteStrategy1();
-		// 声明出上下文对象
+		// 创建上下文对象，传入具体策略对象
 		Context context = new Context(strategy);
-		// 执行封装后的方法
+		// 执行算法
 		context.algorithm();
 	}
 }

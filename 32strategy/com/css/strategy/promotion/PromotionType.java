@@ -5,7 +5,9 @@ package com.css.strategy.promotion;
  */
 public enum PromotionType {
 
-	CASHNORMAL(1, CashNormal.class, "原价"), CASHREBATE(2, CashRebate.class, "打折"), CASHRETURN(3, CashReturn.class, "满减");
+	CASHNORMAL(1, CashNormal.class, "原价"), 
+	CASHREBATE(2, CashRebate.class, "打折"), 
+	CASHRETURN(3, CashReturn.class, "满减");
 
 	private Integer code;
 

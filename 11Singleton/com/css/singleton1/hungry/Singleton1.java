@@ -1,5 +1,7 @@
 package com.css.singleton1.hungry;
 
+import java.io.Serializable;
+
 /**
  * 饿汉式
  * 
@@ -7,9 +9,9 @@ package com.css.singleton1.hungry;
  * 
  * CSS. WangWeidong
  */
-public class Singleton1 {
+public class Singleton1 implements Serializable {
 	private static Singleton1 INSTANCE = new Singleton1();
-
+	
 	public static Singleton1 getInstance() {
 		return INSTANCE;
 	}

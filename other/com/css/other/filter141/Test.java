@@ -19,12 +19,12 @@ public class Test {
 		Filter f2 = new SensitiveFilter();
 
 		// 添加命令，执行命令
-		invoker.setCommand(f1);
+		invoker.setFilter(f1);
 		msg = invoker.execute(msg);
 		System.out.println(msg);
 
 		// 添加命令，执行命令
-		invoker.setCommand(f2);
+		invoker.setFilter(f2);
 		msg = invoker.execute(msg);
 		System.out.println(msg);
 

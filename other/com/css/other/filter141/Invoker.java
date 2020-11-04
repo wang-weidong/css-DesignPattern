@@ -9,13 +9,13 @@ package com.css.other.filter141;
  */
 public class Invoker {
 
-	private Filter command;
+	private Filter filter;
 
-	public void setCommand(Filter command) {
-		this.command = command;
+	public void setFilter(Filter filter) {
+		this.filter = filter;
 	}
 
 	public String execute(String str) {
-		return command.doFilter(str);
+		return filter.doFilter(str);
 	}
 }

@@ -1,4 +1,4 @@
-package com.css.other.filter12;
+package com.css.other.filter122;
 
 /**
  * 环境类
@@ -15,6 +15,8 @@ public class Context {
 	}
 
 	public String handle(String str) {
-		return filter.doFilter(str);
+		str = filter.htmlFilter(str);
+		str = filter.sensitiveFilter(str);
+		return str;
 	}
 }

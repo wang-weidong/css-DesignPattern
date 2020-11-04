@@ -10,18 +10,13 @@ import java.util.HashMap;
  * @author CSS. WangWeidong
  */
 public class FilterFactory {
-	private static final FilterFactory INSTANCE = new FilterFactory();
 	private static final HashMap<String, Filter> filterMaps = new HashMap<>();
 	static {
 		filterMaps.put("html", new HTMLFilter());
 		filterMaps.put("sensitive", new SensitiveFilter());
 	}
 
-	public static FilterFactory getFactory() {
-		return INSTANCE;
-	}
-
-	public Filter getFilter(String type) {
+	public static Filter getFilter(String type) {
 		return filterMaps.get(type);
 	}
 }

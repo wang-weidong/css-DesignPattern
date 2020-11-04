@@ -34,14 +34,17 @@ public class ForumAccount {
 
 	public void downloadFile(int score) {
 		state.downloadFile(this, score);
+		System.out.println("--------------------------------------");
 	}
 
 	public void writeNote(int score) {
 		state.writeNote(this, score);
+		System.out.println("--------------------------------------");
 	}
 
 	public void replyNote(int score) {
 		state.replyNote(this, score);
+		System.out.println("--------------------------------------");
 	}
 
 	public String getName() {

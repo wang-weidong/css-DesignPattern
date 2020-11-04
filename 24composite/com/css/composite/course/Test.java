@@ -39,7 +39,7 @@ public class Test {
 
 		catalog3.add(new Course("目录三级课程", 50));
 
-		root.print();
+		catalog1.print();
 	}
 
 }

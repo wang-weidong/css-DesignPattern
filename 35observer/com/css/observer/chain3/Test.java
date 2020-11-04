@@ -31,6 +31,9 @@ public class Test {
 		subject.add(observer1);
 		// 通知观察者
 		subject.notifyObserver("这是一个来自Subject的消息1");
+		
+		System.out.println("-------------------------------------------------");
+		
 		subject.notifyObserver("这是一个来自Subject的消息2");
 	}
 }

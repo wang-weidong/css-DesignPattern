@@ -14,12 +14,12 @@ public class Test {
 		Invoker invoker = new Invoker();
 
 		// 创建命令接收方
-		ConcreteReciver1 receiver1 = new ConcreteReciver1();
-		ConcreteReciver2 receiver2 = new ConcreteReciver2();
+		Receiver receiver1 = new ConcreteReceiver1();
+		Receiver receiver2 = new ConcreteReceiver2();
 
 		// 创建命令
-		ConcreteCommand1 concreteCommand1 = new ConcreteCommand1(receiver1, receiver2);
-		ConcreteCommand2 concreteCommand2 = new ConcreteCommand2(receiver2);
+		Command concreteCommand1 = new ConcreteCommand1(receiver1, receiver2);
+		Command concreteCommand2 = new ConcreteCommand2(receiver2);
 
 		// 添加命令
 		invoker.addCommand(concreteCommand1);
