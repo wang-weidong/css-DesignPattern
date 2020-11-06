@@ -1,7 +1,7 @@
-package com.css.other.filter153;
+package com.css.other.filter162;
 
 /**
- * 过滤链类
+ * 过滤链流水线类
  * 
  * 中国软件与技术服务股份有限公司-设计模式培训（Java版）
  * 
@@ -20,6 +20,6 @@ public class FilterChain {
 	}
 
 	public String doFilter(String str) {
-		return head != null ? head.doFilter(str) : null;
+		return head != null ? head.doFilter(str) : str;
 	}
 }

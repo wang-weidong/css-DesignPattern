@@ -1,4 +1,4 @@
-package com.css.other.filter16;
+package com.css.other.filter162;
 
 /**
  * 测试
@@ -11,11 +11,12 @@ public class Test {
 	public static void main(String[] args) {
 		String msg = "大家好，<script>这些是敏感词1、敏感词2、<敏感词3>、王伟东</script>";
 
-		Filter f1 = new HTMLFilter();
-		Filter f2 = new SensitiveFilter();
-		f1.setNext(f2);
+		FilterChain fc = new FilterChain();
 
-		msg = f1.doFilter(msg);
+		fc.add(new HTMLFilter());
+		fc.add(new SensitiveFilter());
+
+		msg = fc.doFilter(msg);
 
 		System.out.println(msg);
 	}
